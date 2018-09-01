@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>URL Shortener Microservice</title>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+       <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet" type="text/css">
+       <link href="/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>URL Shortener Microservice</h2>
+            <p>Type the URL to be shortened and post it. The url must start with http(s)://</p>
+            <p>examples: <code>https://www.google.com</code> and <code>https://lichess.org</code></p>
+            <form action="shorturl/new" method="POST">
+                <label for="url_input">URL to be shortened</label>
+                <input id="url_input" type="text" name="url">
+                <input type="submit" value="POST URL">
+            </form>
+            <h3>Results:</h3>
+            <p><a href="https://edkahara-url-shortener-microservice.glitch.me/shorturl/1">/shorturl/1</a> will Redirect to: https://www.google.com</p>
+            <p><a href="https://edkahara-url-shortener-microservice.glitch.me/shorturl/2">/shorturl/2</a> will Redirect to: https://lichess.org</p>
+        </div>
+    </body>
+</html>
